@@ -1,0 +1,43 @@
+
+.resumeIcon {
+  position: fixed;
+  top: 1rem;
+  left: 6rem;
+}
+
+.iconButton {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: 2rem;
+
+}
+
+@media (max-width: 768px) {
+  .resumeIcon {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+  }
+
+  .iconButton {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.iconContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    max-width: 100%;
+  }
+}

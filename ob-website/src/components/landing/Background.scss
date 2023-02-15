@@ -1,0 +1,339 @@
+/* for moving background */
+
+
+.background {
+  max-width: 100%;
+
+  div {
+    box-sizing: content-box;
+  }
+}
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  animation: ripple 8s infinite;
+  box-shadow: 0px 0px 2px 0px #508fb9;
+}
+
+.small{
+  width: 150px;
+  height: 150px;
+  right: 20vw;
+  top: 10vh;
+  background: rgb(185, 92, 92);
+}
+
+@media (max-width: 1100px) {
+  .small{
+    width: 100px;
+    height: 100px;
+    right: 15vw;
+    top: 30vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .small{
+    width: 50px;
+    height: 50px;
+    right: 25vw;
+    top: 15vh;
+  }
+}
+
+.mediun{
+  width: 250px;
+  height: 250px;
+  right: 9vw;
+  top: 15vh;
+  background: rgb(105, 40, 121);
+}
+
+@media (max-width: 1100px) {
+  .mediun{
+    width: 200px;
+    height: 200px;
+    right: 6vw;
+    top: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .mediun{
+    width: 150px;
+    height: 150px;
+    right: -7vw;
+    top: -5vh;
+  }
+}
+
+.mediunLarge{
+  width: 300px;
+  height: 300px;
+  right: 25vw;
+  top: -5vh;
+  background: rgb(207, 111, 8);
+}
+
+@media (max-width: 1100px) {
+  .mediunLarge{
+    width: 240px;
+    height: 240px;
+    right: 15vw;
+    top: -10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .mediunLarge{
+    width: 200px;
+    height: 200px;
+    right: 5vw;
+    top: -35vh;
+  }
+}
+
+
+.large{
+  width: 400px;
+  height: 400px;
+  right: 40vw;
+  top: -1vh;
+  background: rgb(124, 162, 65);
+}
+@media (max-width: 1100px) {
+  .large{
+    width: 300px;
+    height: 300px;
+    right: 10vw;
+    top: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .large{
+    width: 260px;
+    height: 260px;
+    right: -10vw;
+    top: 15vh;
+  }
+}
+
+.xlarge{
+  width: 500px;
+  height: 500px;
+  right: 2vw;
+  top: 40vh;
+  background: rgb(228, 205, 89);
+}
+
+@media (max-width: 1100px) {
+  .xlarge{
+    width: 500px;
+    height: 500px;
+    right: -22vw;
+    top: -30vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .xlarge{
+    width: 500px;
+    height: 500px;
+    right: -50vw;
+    top: -20vh;
+  }
+}
+
+.xxlarge{
+  width: 550px;
+  height: 550px;
+  right: 10vw;
+  top: 10vh;
+  background: rgb(148, 248, 139);
+}
+
+@media (max-width: 1100px) {
+  .xxlarge{
+    width: 550px;
+    height: 550px;
+    right: 30vw;
+    top: -20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .xxlarge{
+  width: 550px;
+  height: 550px;
+  right: 30vw;
+  top: -30vh;
+  }
+}
+
+.shade1{
+  opacity: 0.3;
+}
+
+.shade2{
+  opacity: 0.5;
+  border: none;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  20%{
+    transform: scale(1.2);
+  }
+  
+  40%{
+    transform: scale(0.8);
+  }
+
+  60%{
+    transform: scale(1.2);
+  }
+
+  80%{
+    transform: scale(0.6);
+  }
+
+  90%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+
+/* CIRCLES HAPPENING AT DIFFERENT TIMES */
+
+.circle2{
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(247, 171, 171);
+  animation: oppRipple 12s infinite;
+  box-shadow: 5px 5px 5px 5px #508fb9;
+}
+
+.oppLarge {
+  width: 400px;
+  height: 400px;
+  right: 40vw;
+  top: -1vh;
+  background: rgb(124, 162, 65);
+}
+
+.oppLarge2 {
+  width: 400px;
+  height: 400px;
+  right: -3vw;
+  top: -8vh;
+  background: rgb(223, 236, 205);
+}
+
+.oppMedium {
+  width: 250px;
+  height: 250px;
+  right: 9vw;
+  top: 15vh;
+  background: rgb(105, 40, 121);
+}
+
+@keyframes oppRipple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.4);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 1100px) {
+  .circle2{
+  display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .circle2{
+    display: none;
+  }
+}
+
+/* Circles for down the page */
+
+.circle3 {
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(247, 171, 171);
+  animation: slowRipple 20s infinite;
+  box-shadow: 1px 1px 1px 1px #508fb9;
+}
+
+@keyframes slowRipple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(2.4);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+.oppLarge3 {
+  width: 400px;
+  height: 400px;
+  right: -10vw;
+  top: 110vh;
+  background: rgb(123, 227, 250);
+}
+
+.oppLarge4 {
+  width: 300px;
+  height: 300px;
+  left: -10vw;
+  top: 90vh;
+  background: rgb(205, 238, 246);
+}
+
+@media (max-width: 1100px) {
+  .oppLarge3 {
+    right: -10vw;
+    top: 110vh;  }
+    
+  .oppLarge4 {
+    left: -10vw;
+    top: 110vh;  
+  }
+}
+
+@media (max-width: 768px) {
+  .oppLarge3 {
+    width: 150px;
+    height: 150px;
+    right: -25vw;
+    top: 160vh;
+  }
+  .oppLarge4 {
+    width: 150px;
+    height: 150px;
+    left: -25vw;
+    top: 90vh;
+  }
+}

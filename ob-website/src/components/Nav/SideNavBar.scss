@@ -1,0 +1,32 @@
+nav {
+  font-size: 2rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg) translate3d(-50%,0,0);
+  top: 5%;
+  left: -12rem;
+
+  a {
+    margin-right: 2vw;
+    text-decoration: none;
+    color: #37290f;
+  }
+
+  a:hover {
+    margin-right: 2.1vw;
+    text-decoration: none;
+    color: #e8caf3;
+  }
+
+  a.active {
+    color: #d43ee4;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+  font-size: 1rem;
+  left: -5.5rem;
+  }
+}

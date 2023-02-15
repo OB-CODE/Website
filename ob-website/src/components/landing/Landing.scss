@@ -1,0 +1,44 @@
+.Container {
+  padding-top: 20vh;
+  margin-left: 30%;
+
+  h5 {
+    font-size: 8rem;
+    margin: 10px;
+
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding-top: 10vh;
+    margin-left: 20%;
+
+    h5 {
+      font-size: 2rem;
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.heading {
+  margin-left: spacing(50);
+}
+
+@media (max-width: 768px) {
+.heading {
+  margin-left: spacing(10);
+}}
+
+@media (max-width: 768px) {
+  .jobs {
+    font-size: 3rem;
+  }}
