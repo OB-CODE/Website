@@ -1,5 +1,5 @@
 .aboutme {
-  font-size: 1.25rem;
+  font-size: 1.7rem;
 }
 
 @media (max-width: 768px) {
@@ -16,18 +16,19 @@
 
 .about {
   width: 80%;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  margin-bottom: 4vh;
 }
 .heading {
   width: 30%;
   font-size: 1.15rem;
 }
 ._img {
-  margin: 10em;
+  margin: 2em;
   width: 35em;
   height: 20em;
   border-radius: 16px;
@@ -47,30 +48,17 @@
   text-decoration: none;
   background-color: #ec704c;
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 1400px) {
   .about {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  ._img {
-    margin: 2em;
-  }
-  ._content_wrapper {
-    width: 40%;
-  }
-}
-@media (max-width: 768px) {
-  .about {
-    margin-left: 1.2em;
-    margin-right: 4em;
     flex-direction: column;
   }
   ._img {
-    width: 15em;
-    height: 12em;
+    width: 80%;
+    height: max;
   }
   ._content_wrapper {
-    width: 15em;
+    width: 90%;
   }
   .contact_msg {
     display: none;
