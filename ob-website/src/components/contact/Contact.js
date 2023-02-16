@@ -36,6 +36,9 @@ const Contact = () => {
     return (
       <section id="contact">
         <div className='container'>
+        <div valign='bottom' className="botCircle botSmall shade2"></div>
+        <div valign='bottom' className="botCircle botSmall2 shade2"></div>
+
           <div className="contact">
             <div className="_form_wrapper">
               <form ref={form} onSubmit={sendEmail} className='vertAlign'>
@@ -78,6 +81,9 @@ const Contact = () => {
               <div>"Let's connect. Feel free to send a message."</div>
             </h1>
           </div>
+        </div>
+        <div className="botStrip">
+          <h3>Made by Mitchell O'Brien</h3>
         </div>
       </section>
   );

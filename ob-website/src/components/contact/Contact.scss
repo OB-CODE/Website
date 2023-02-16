@@ -3,6 +3,8 @@
   background-color: aliceblue;
   padding-top: 3vh;  
   padding-bottom: 3vh;
+  position: relative;
+  overflow-y: hidden;
 
 }
 .contact {
@@ -70,8 +72,6 @@
 @media (max-width: 768px) {
   .contact {
     width: 50%;
-    margin-left: 2.5rem;
-    margin-right: 4rem;
     flex-direction: column;
   }
   ._form_wrapper {
@@ -90,4 +90,45 @@
   .contact {
     flex-direction: column;
   }
+}
+
+.botStrip {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-bottom: 5vh;
+  text-align: center;
+  z-index: 2;
+
+
+  h3 {
+    padding-top: 1vh;
+    margin: 0;
+  }
+}
+
+.botCircle{
+
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  animation: ripple 8s infinite;
+  box-shadow: 0px 0px 2px 0px #508fb9;
+}
+
+.botSmall {
+  shape-outside: circle(50%) margin-box;
+  position: absolute;
+  bottom: -5vh;
+  left: -5vw;
+  height: 25em;
+  width: 25em;
+  background: rgb(185, 92, 92, 0.7);
+}
+
+.botSmall2 {
+  shape-outside: circle(50%) margin-box;
+  position: absolute;
+  bottom: 25vh;
+  right: -5vw;
+  height: 25em;
+  width: 25em;
+  background: rgb(185, 92, 92, 0.4);
 }
