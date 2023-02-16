@@ -59,7 +59,7 @@
 
 .contact_msg {
   width: 20%;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 5rem;
 }
 
@@ -133,4 +133,16 @@
   height: 25em;
   width: 25em;
   background: rgb(185, 92, 92, 0.4);
+}
+
+@media (max-width: 1100px) {
+  .botSmall, .botSmall2 {
+    height: 15em;
+    width: 15em;
+  }
+
+  .botSmall2 {
+    top: -5vh;
+    right: -10vw;
+  }
 }

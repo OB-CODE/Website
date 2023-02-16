@@ -23,7 +23,7 @@ const allProjects = [
       description: [`About:`, `Home Harvest is designed to reduce the barriers of entry for the everyday person trying to grow produce.`, `3 API's intergrated and a personal database.`, `Renders 12 months of weather data in table and graph format.`, `Calculates ideal planting times based off growing conditions for each crop.` ]
       },
       {
-      name: '#3 Pokemon EXPRESS game',
+      name: 'Pokemon EXPRESS game',
       image1: poke1,
       image2: poke2,
       gitHub: "https://github.com/OB-CODE/pokemon-game",
@@ -31,7 +31,7 @@ const allProjects = [
       description: [`Requirements:`, `Craft thoughtful user stories together, as a team`, `Manage team contributions and collaboration using a standard Git flow on Github`, `Layout and style your front-end with clean & well-formatted CSS`, `Include separate HTML / CSS / JavaScript files`, `GOAL: Work with other classmates to architect, design, and collaboratively build a product.`]
       },
       {
-      name: '#2: Surf Spot - Currently down (Need to change hositng from Fly.io)',
+      name: 'Surf Spot - Currently down (Need to change hositng from Fly.io)',
       image1: surf1,
       image2: surf2,
       gitHub: "https://github.com/OB-CODE/Surf-spot-SEI-Project-2",
@@ -39,7 +39,7 @@ const allProjects = [
       description: [`Requirements:`, `Have at least 2 resources(tables) (more if they make sense) – one representing someone using your application, and one that represents the main functional idea for your app`, `Include sign up/log in functionality(if they make sense), with encrypted passwords & an authorization flow`, `Have complete RESTful routes for at least one of your resources with GET, POST, PATCH, and DELETE`, `DESCRIPTION: Surf Spot allows full CRUD features and is a full stack application build using Ruby. It intergrates with a custome backend API and global weather data.` ]
       },
       {
-      name: '#1: Tic-Tac-Toe',
+      name: 'Tic-Tac-Toe',
       image1: tic1,
       image2: tic2,
       gitHub: "https://github.com/OB-CODE/Tic-Tac-Toe",
@@ -50,18 +50,19 @@ const allProjects = [
 ]
 
   return (
+  <section id="projects">
     <div className='projectContainer'>
         <h1>GA COURSE PROJECTS</h1>
 
           {allProjects.map((project, index) =>
-          <div>
+          <div key={index}>
             <h1 className='titles'>Project {4 - index}: {project.name}</h1>
             <div className='eachContainer'>
               <div className="leftDetails">
-                <div className='name' key={index}>Project Name: {project.name}</div>
-                <div className='git' key={index}><a href={project.gitHub}>Link to project's GITHUB</a></div>
-                <div className='url' key={index}><a href={project.url}>Link to LIVE URL</a></div>
-                <div className='description' key={index}>
+                <div className='name' >Project Name: {project.name}</div>
+                <div className='git'><a href={project.gitHub}>Link to project's GITHUB</a></div>
+                <div className='url'><a href={project.url}>Link to LIVE URL</a></div>
+                <div className='description'>
 
                   <p>{project.description[0]}</p>
                   <p className='pad'>- {project.description[1]}</p>
@@ -72,13 +73,14 @@ const allProjects = [
               </div>
 
               <div className="rightContent">
-                <div className='images' key={index}><img src={project.image1} alt="" /></div>
-                <div className='images' key={index}><img src={project.image2} alt="" /></div>
+                <div className='images'><img src={project.image1} alt="" /></div>
+                <div className='images'><img src={project.image2} alt="" /></div>
               </div>
             </div>   
           </div>
           )}
-    </div>
+      </div>
+    </section>
   )
 }
 

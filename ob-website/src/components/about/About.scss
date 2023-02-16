@@ -2,6 +2,10 @@
   font-size: 1.7rem;
 }
 
+.larger {
+  font-size: 1.7rem;
+}
+
 @media (max-width: 768px) {
   .larger {
       display: none;
@@ -68,21 +72,27 @@
 
 // css for slideshow
 
+.slideshow {
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 5vh;
+}
 
 .each-slide-effect {
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
   margin-bottom: 5vh;
 
   img {
-    height: 100%;
+    max-width: 100%;
   }
 
  
   div {
   background-repeat: no-repeat;
   background-position: 0%;
-  text-align: center;
+  display: flex;
+  align-items: center;
   max-width: 100%;
   margin-bottom: 5vh;
   height: 50vh;
@@ -99,4 +109,12 @@
 
 .hobbies {
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .each-slide-effect {
+    div {
+      height: 20vh;
+    }
+  }
 }

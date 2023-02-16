@@ -1,13 +1,13 @@
 import './App.css';
 import SideNav from "./components/Nav/SideNav.js";
-import Socials from "./components/Nav/SideNav.js";
+import Socials from "./components/Nav/Socials.js";
 import About from "./components/about/About.js";
 import Contact from "./components/contact/Contact.js";
-import Projects from "./components/projects/Projects.js";
+import Project from "./components/projects/Project.js";
 import ResumeLink from "./components/content/ResumeLink.js";
 import LandingHeader from "./components/landing/LandingHeader.js";
 import BackgroundAnimations from "./components/landing/BackgroundAnimations.js";
-import { Hidden } from '@mui/material';
+// import { Hidden } from '@mui/material';
 
 
 function App() {
@@ -17,12 +17,10 @@ function App() {
       
       <BackgroundAnimations />
       <ResumeLink />
-      <Hidden smDown>
-        <Socials />
-      </Hidden>
+      <Socials />
       <LandingHeader />
       <SideNav />
-      <Projects />
+      <Project />
       <About />
       <Contact />
       

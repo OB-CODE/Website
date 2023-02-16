@@ -10,7 +10,7 @@ const ResumeLink = () => {
     <Link
       href={Resume}
       key={1}
-      target='_blank' //make page open in new windwo
+      target='_blank' //make page open in new window
       underline='none'
       color='inherit'
     >

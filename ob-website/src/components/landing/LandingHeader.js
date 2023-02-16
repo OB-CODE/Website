@@ -7,7 +7,7 @@ const LandingHeader = () => {
       <div className="strip"></div>
       <div className='Container'>
         <div className="heading">
-          <h5>Mitchell</h5>
+          <h5>Mitch</h5>
           <h5>O'Brien</h5>
         </div>
         <h1 className='jobs'>{`<Software Engineer />`}</h1>

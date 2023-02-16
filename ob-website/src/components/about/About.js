@@ -45,25 +45,23 @@ const About = () => {
             <div component='h2' variant="h5">
               <div text={`${greetings}`} />
             </div>
-            <p className="aboutme">
-              {aboutme}
-              <p className="larger">
-                {extendedAboutme}
-              </p>
-            </p>
+              <p className="aboutme">{aboutme} </p>
+              <p className="larger">{extendedAboutme}</p>
           </div>
         </div>
       </div>
-      <h1 className="hobbies">Get to know me:</h1>
-       <Slide>
-              {images.map((image, index) => 
-                <div className="each-slide-effect">
-                  <div>
-                    <img key={index} src={image} alt="" />
-                  </div>
-                </div>
-              )}
+      <div className="slideshow">
+        <Slide>
+          {images.map((image, index) => 
+            <div key={index} className="each-slide-effect">
+              <div>
+                <img  src={image} alt="" />
+              </div>
+            </div>
+          )}
         </Slide>
+      </div>
+
     </section>
   );
 };

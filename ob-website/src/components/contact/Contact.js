@@ -78,12 +78,12 @@ const Contact = () => {
               </form>
             </div>
             <h1 className="contact_msg">
-              <div>"Let's connect. Feel free to send a message."</div>
+              <div>Want to talk programming... or surf spots? Drop me a line!</div>
             </h1>
           </div>
         </div>
         <div className="botStrip">
-          <h3>Made by Mitchell O'Brien</h3>
+          <h3>Made by Mitch O'Brien</h3>
         </div>
       </section>
   );

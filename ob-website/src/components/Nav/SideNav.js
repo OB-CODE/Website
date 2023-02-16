@@ -15,7 +15,7 @@ const SideNav = () => {
     >Home
     </a>
     <a href="#projects"
-      onClick={() => setActiveNav('#projects')}
+      onClick={() => setActiveNav('#project')}
       className={activeNav === '#projects' ? 'active' : ''}
     >Projects
     </a>
