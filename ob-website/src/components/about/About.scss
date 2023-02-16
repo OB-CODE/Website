@@ -21,7 +21,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 4vh;
+  margin-bottom: 5vh;
 }
 .heading {
   width: 30%;
@@ -64,4 +64,39 @@
     display: none;
     // visibility: hidden;
   }
+}
+
+// css for slideshow
+
+
+.each-slide-effect {
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 5vh;
+
+  img {
+    height: 100%;
+  }
+
+ 
+  div {
+  background-repeat: no-repeat;
+  background-position: 0%;
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 5vh;
+  height: 50vh;
+  }
+}
+
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.hobbies {
+  text-align: center;
 }
