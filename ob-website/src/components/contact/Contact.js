@@ -15,7 +15,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_8bezxog', 'template_jmsk313', form.current, 'knwNTK4YU4K30HYMd')
+    emailjs.sendForm('service_cyt1sgt', 'template_gcbv758', form.current, 'T2Pp5WbueR34C7-R8')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -35,7 +35,7 @@ const Contact = () => {
 
     return (
       <section id="contact">
-        <div className='' maxWidth="md">
+        <div className='container'>
           <div className="contact">
             <div className="_form_wrapper">
               <form ref={form} onSubmit={sendEmail} className='vertAlign'>
@@ -75,7 +75,7 @@ const Contact = () => {
               </form>
             </div>
             <h1 className="contact_msg">
-              <div>"Say Hello"</div>
+              <div>"Let's connect. Feel free to send a message."</div>
             </h1>
           </div>
         </div>
