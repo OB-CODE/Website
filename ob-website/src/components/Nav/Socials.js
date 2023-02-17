@@ -13,24 +13,24 @@ import { Box } from '@mui/system';
 import zIndex from '@mui/material/styles/zIndex';
 
 const actions = [
-    { icon: <EmailIcon />, name: 'Gmail', url: ' ' },
-    { icon: <TwitterIcon />, name: 'Twitter', url: ' ' },
-    { icon: <GitHubIcon />, name: 'GitHub', url: ' ' },
-    { icon: <LinkedInIcon />, name: 'LinkedIn', url: ' ' },
+    { icon: <EmailIcon />, name: 'Gmail', url: 'https://mail.google.com/' },
+    { icon: <TwitterIcon />, name: 'Twitter', url: 'https://twitter.com/Mitch_OB_CODE' },
+    { icon: <GitHubIcon />, name: 'GitHub', url: 'https://github.com/OB-CODE' },
+    { icon: <LinkedInIcon />, name: 'LinkedIn', url: 'www.linkedin.com/in/mitchellobriense01' },
   ]
 const Socials = () => {
 
-  const [direction, setDirection] = React.useState('up');
+  // const [direction, setDirection] = React.useState('up');
 
 
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  // const [open, setOpen] = React.useState(true);
+  // const handleOpen = () => setOpen(true);
+  // const handleClose = () => setOpen(false);
 
-  const handleDirectionChange = (event) => {
-    setDirection(event.target.value);
+  // const handleDirectionChange = (event) => {
+  //   setDirection(event.target.value);
 
-  };
+  // };
 
   
   return (
@@ -40,9 +40,8 @@ const Socials = () => {
         sx={{ position: 'absolute', bottom: -315, right: 30 }}
         icon={<SpeedDialIcon />}
         direction='down'
-        onChange={handleDirectionChange}
-        onClose={handleClose}
-        onOpen={handleOpen}
+        // onChange={handleDirectionChange}
+
       >
       {actions.map((action) => (
         <SpeedDialAction

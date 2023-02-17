@@ -74,7 +74,10 @@
 
 .slideshow {
   max-width: 70%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: auto; 
   margin-bottom: 5vh;
 }
 
@@ -84,6 +87,7 @@
   margin-bottom: 5vh;
 
   img {
+    margin: auto;
     max-width: 100%;
   }
 
@@ -115,6 +119,14 @@
   .each-slide-effect {
     div {
       height: 20vh;
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .each-slide-effect {
+    div {
+      height: 60vh;
     }
   }
 }

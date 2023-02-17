@@ -52,7 +52,7 @@ const allProjects = [
   return (
   <section id="projects">
     <div className='projectContainer'>
-        <h1>GA COURSE PROJECTS</h1>
+        <h1 className='heading'>GA COURSE PROJECTS</h1>
 
           {allProjects.map((project, index) =>
           <div key={index}>

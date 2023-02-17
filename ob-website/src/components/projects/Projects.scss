@@ -9,7 +9,10 @@
     flex-direction: column;
   }
 
-  h1 {
+  .heading {
+    text-align: center;
+    margin: auto;
+    font-size: 3rem;
     padding-top: 5vh;
     padding-bottom: 2vh;
   }
@@ -74,6 +77,8 @@
   }
 }
 
+
+
 @media (max-width: 2400px) {
   .eachContainer {
     .leftDetails {
@@ -94,6 +99,12 @@
       flex-direction: column;
     }
   }
+  .titles {
+    padding-top: 4vh;
+    font-size: 1.5rem;
+    margin-right: 5vw;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -102,7 +113,6 @@
 
     div {
       font-size: 1rem;
-
     }
 
     .rightContent {
@@ -113,3 +123,9 @@
 }
 
 // .eachContainer::
+
+.titles {
+  padding-top: 4vh;
+  font-size: 2.5rem;
+  margin-right: 5vw;
+}

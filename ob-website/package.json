@@ -14,6 +14,8 @@
     "gradientify": "^1.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-modal-image": "^2.6.0",
     "react-scripts": "5.0.1",
     "react-slideshow-image": "^4.2.0",
     "sweetalert2": "^11.7.1",

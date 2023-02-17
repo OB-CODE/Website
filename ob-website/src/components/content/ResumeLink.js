@@ -1,22 +1,19 @@
 import React from 'react';
-import { Link } from '@mui/material';
-import Resume from '../../assets/MOBResume.pdf';
+import Resume from './Resume.png';
 import "./Content.scss";
-import icon from "../../assets/resumeIcon.png"
+import ModalImage from "react-modal-image";
+
 
 const ResumeLink = () => {
 
   return <div className='resumeIcon'>
-    <Link
-      href={Resume}
-      key={1}
-      target='_blank' //make page open in new window
-      underline='none'
-      color='inherit'
-    >
-      <div className='iconButton'><div className="iconContainer"><img src={icon} alt="" /> <div>Resume</div></div>
-</div>
-    </Link>
+  
+  <ModalImage
+    className="sizeSmall"
+    small={Resume}
+    large={Resume}
+  />
+  Resume
   </div>;
 };
 

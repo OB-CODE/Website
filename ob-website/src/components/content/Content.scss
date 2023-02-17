@@ -4,6 +4,9 @@
   top: 1rem;
   left: 6rem;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 
 .iconButton {
@@ -41,4 +44,8 @@
   img {
     max-width: 100%;
   }
+}
+
+.sizeSmall {
+  height: 3vh;
 }
