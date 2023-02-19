@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 
 import './Contact.scss';
 import { TextField } from "@mui/material";
+import { CallToActionSharp } from "@mui/icons-material";
+import actions from '../Nav/linkDetails'
 
 
 
@@ -84,9 +86,24 @@ const Contact = () => {
         </div>
         <div className="botStrip">
           <h3>Made by Mitch O'Brien</h3>
+        <div className="spreadDetails">
+          {actions.map((action, index) => 
+            <div key={action.name}>
+              <a href={action.url}>
+                <div>{action.name}</div>
+                <div>{action.icon}</div>
+              </a>
+            </div>
+          )}
         </div>
-      </section>
+      </div>
+    </section>
   );
 };
 
 export default Contact;
+
+// key={action.name}
+// icon={action.icon}
+// tooltipTitle={action.name}
+// href={action.url}

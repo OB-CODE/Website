@@ -146,3 +146,14 @@
     right: -10vw;
   }
 }
+
+.spreadDetails {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  a {
+    color: #0a0a0a;
+  }
+}
