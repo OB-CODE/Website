@@ -18,8 +18,8 @@
 }
 
 .small{
-  width: 150px;
-  height: 150px;
+  width: 10em;
+  height: 10em;
   right: 20vw;
   top: 10vh;
   background: rgb(185, 92, 92);
@@ -27,8 +27,8 @@
 
 @media (max-width: 1100px) {
   .small{
-    width: 100px;
-    height: 100px;
+    width: 7em;
+    height: 7em;
     right: 15vw;
     top: 30vh;
   }
@@ -36,16 +36,16 @@
 
 @media (max-width: 768px) {
   .small{
-    width: 50px;
-    height: 50px;
+    width: 4em;
+    height: 4em;
     right: 25vw;
     top: 15vh;
   }
 }
 
 .mediun{
-  width: 250px;
-  height: 250px;
+  width: 17em;
+  height: 17em;
   right: 9vw;
   top: 15vh;
   background: rgb(105, 40, 121);
@@ -53,8 +53,8 @@
 
 @media (max-width: 1100px) {
   .mediun{
-    width: 200px;
-    height: 200px;
+    width: 11em;
+    height: 11em;
     right: 6vw;
     top: 10vh;
   }
@@ -62,16 +62,16 @@
 
 @media (max-width: 768px) {
   .mediun{
-    width: 150px;
-    height: 150px;
-    right: -7vw;
-    top: -5vh;
+    width: 7em;
+    height: 7em;
+    right: -3vw;
+    top: -1vh;
   }
 }
 
 .mediunLarge{
-  width: 300px;
-  height: 300px;
+  width: 20em;
+  height: 20em;
   right: 25vw;
   top: -5vh;
   background: rgb(207, 111, 8);
@@ -79,8 +79,8 @@
 
 @media (max-width: 1100px) {
   .mediunLarge{
-    width: 240px;
-    height: 240px;
+    width: 14em;
+    height: 14em;
     right: 15vw;
     top: -10vh;
   }
@@ -88,25 +88,25 @@
 
 @media (max-width: 768px) {
   .mediunLarge{
-    width: 200px;
-    height: 200px;
-    right: 5vw;
-    top: -35vh;
+    width: 10em;
+    height: 10em;
+    right: 25vw;
+    top: -7vh;
   }
 }
 
 
 .large{
-  width: 400px;
-  height: 400px;
+  width: 32em;
+  height: 32em;
   right: 40vw;
   top: -1vh;
   background: rgb(124, 162, 65);
 }
 @media (max-width: 1100px) {
   .large{
-    width: 300px;
-    height: 300px;
+    width: 22em;
+    height: 22em;
     right: 10vw;
     top: 10vh;
   }
@@ -114,16 +114,16 @@
 
 @media (max-width: 768px) {
   .large{
-    width: 260px;
-    height: 260px;
+    width: 15em;
+    height: 15em;
     right: -10vw;
     top: 15vh;
   }
 }
 
 .xlarge{
-  width: 500px;
-  height: 500px;
+  width: 40em;
+  height: 40em;
   right: 2vw;
   top: 40vh;
   background: rgb(228, 205, 89);
@@ -131,8 +131,8 @@
 
 @media (max-width: 1100px) {
   .xlarge{
-    width: 500px;
-    height: 500px;
+    width: 35em;
+    height: 35em;
     right: -22vw;
     top: -30vh;
   }
@@ -140,16 +140,16 @@
 
 @media (max-width: 768px) {
   .xlarge{
-    width: 500px;
-    height: 500px;
+    width: 38em;
+    height: 38em;
     right: -50vw;
     top: -20vh;
   }
 }
 
 .xxlarge{
-  width: 550px;
-  height: 550px;
+  width: 40em;
+  height: 40em;
   right: 10vw;
   top: 10vh;
   background: rgb(148, 248, 139);
@@ -157,8 +157,8 @@
 
 @media (max-width: 1100px) {
   .xxlarge{
-    width: 550px;
-    height: 550px;
+    width: 33em;
+    height: 33em;
     right: 30vw;
     top: -20vh;
   }
@@ -166,10 +166,10 @@
 
 @media (max-width: 768px) {
   .xxlarge{
-  width: 550px;
-  height: 550px;
+  width: 22em;
+  height: 22em;
   right: 30vw;
-  top: -30vh;
+  top: -20vh;
   }
 }
 
@@ -223,27 +223,73 @@
 }
 
 .oppLarge {
-  width: 400px;
-  height: 400px;
+  width: 32em;
+  height: 32em;
   right: 40vw;
   top: -1vh;
   background: rgb(124, 162, 65);
 }
 
 .oppLarge2 {
-  width: 400px;
-  height: 400px;
+  width: 32em;
+  height: 32em;
   right: -3vw;
   top: -8vh;
   background: rgb(223, 236, 205);
 }
 
 .oppMedium {
-  width: 250px;
-  height: 250px;
+  width: 17em;
+  height: 17em;
   right: 9vw;
   top: 15vh;
   background: rgb(105, 40, 121);
+}
+
+@media (max-width: 1100px) {
+  .oppLarge {
+    width: 22em;
+    height: 22em;
+    right: 10vw;
+    top: 10vh;
+  }
+
+  .oppLarge2 {
+    width: 15em;
+    height: 15em;
+    right: -10vw;
+    top: -15vh;
+  }
+
+  .oppMedium {
+    width: 17em;
+    height: 17em;
+    right: -17vw;
+    top: 15vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .oppLarge {
+    width: 17em;
+    height: 17em;
+    right: 9vw;
+    top: 15vh;
+  }
+
+  .oppLarge2 {
+    width: 17em;
+    height: 17em;
+    right: -10vw;
+    top: -8vh;
+  }
+
+  .oppMedium {
+    width: 13em;
+    height: 13em;
+    left: -15vw;
+    top: 55vh;
+  }
 }
 
 @keyframes oppRipple{
@@ -257,18 +303,6 @@
   
   100%{
     transform: scale(0.8);
-  }
-}
-
-@media (max-width: 1100px) {
-  .circle2{
-  display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .circle2{
-    display: none;
   }
 }
 
@@ -297,16 +331,16 @@
 }
 
 .oppLarge3 {
-  width: 400px;
-  height: 400px;
+  width: 32em;
+  height: 32em;
   right: -10vw;
   top: 110vh;
   background: rgb(123, 227, 250);
 }
 
 .oppLarge4 {
-  width: 300px;
-  height: 300px;
+  width: 20em;
+  height: 20em;
   left: -10vw;
   top: 90vh;
   background: rgb(205, 238, 246);
@@ -314,10 +348,14 @@
 
 @media (max-width: 1100px) {
   .oppLarge3 {
+    width: 15em;
+    height: 15em;
     right: -10vw;
     top: 110vh;  }
     
   .oppLarge4 {
+    width: 15em;
+    height: 15em;
     left: -10vw;
     top: 110vh;  
   }
@@ -325,15 +363,15 @@
 
 @media (max-width: 768px) {
   .oppLarge3 {
-    width: 150px;
-    height: 150px;
-    right: -25vw;
-    top: 160vh;
+    width: 10em;
+    height: 10em;
+    right: -10vw;
+    top: 200vh;
   }
   .oppLarge4 {
-    width: 150px;
-    height: 150px;
-    left: -25vw;
-    top: 90vh;
+    width: 10em;
+    height: 10em;
+    left: -10vw;
+    top: 150vh;
   }
 }
