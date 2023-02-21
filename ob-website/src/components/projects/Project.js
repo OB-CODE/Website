@@ -10,12 +10,17 @@ import HomeH1 from './assets/HomeH1.png'
 import HomeH2 from './assets/HomeH2.png'
 import { Link } from '@mui/material'
 
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+
 
 const Projects = () => {
 
 const allProjects = [
       {
-      name: 'Final',
+      name: 'Home Harvest (Final Project)',
       image1: HomeH1,
       image2: HomeH2,
       gitHub: "https://github.com/OB-CODE/Home-Harvest",
@@ -49,6 +54,22 @@ const allProjects = [
 
 ]
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
+const [open, setOpen] = React.useState(false);
+const handleOpen = () => setOpen(true);
+const handleClose = () => setOpen(false);
+
   return (
   <section id="projects">
     <div className='projectContainer'>
@@ -59,7 +80,7 @@ const allProjects = [
             <h1 className='titles'>Project {4 - index}: {project.name}</h1>
             <div className='eachContainer'>
               <div className="leftDetails">
-                <div className='name' >Project Name: {project.name}</div>
+                {/* <div className='name' >Project Name: {project.name}</div> */}
                 <div className='git'><a href={project.gitHub}>Link to project's GITHUB</a></div>
                 <div className='url'><a href={project.url}>Link to LIVE URL</a></div>
                 <div className='description'>
@@ -72,10 +93,31 @@ const allProjects = [
                 </div>
               </div>
 
-              <div className="rightContent">
+              <div  onClick={handleOpen} className="rightContent">
                 <div className='images'><img src={project.image1} alt="" /></div>
                 <div className='images'><img src={project.image2} alt="" /></div>
               </div>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box sx={style}>
+                  <Typography className='modalSplit' id="modal-modal-title" variant="h6" component="h2">
+                    Looking for a link? 
+                    <span 
+                    className='close'
+                    onClick={handleClose}
+                    >Close X</span>
+                  </Typography>
+                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    They are above the images on the main page.              
+
+                    <p>Have fun!</p>
+                  </Typography>
+                </Box>
+              </Modal>
             </div>   
           </div>
           )}
@@ -85,3 +127,4 @@ const allProjects = [
 }
 
 export default Projects
+
